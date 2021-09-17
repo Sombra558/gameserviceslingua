@@ -10,8 +10,9 @@ class RompecabezaController extends Controller
     {
        
         $recursos = app('db')->select("SELECT * FROM `recursos` WHERE `rompecabeza_id` = $id");
-        
-        return $recursos;
+       
+       
+        return json_encode($recursos);
     }
 
 }
