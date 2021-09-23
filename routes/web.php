@@ -18,4 +18,4 @@ $router->get('/', function () use ($router) {
     dd($results);
     return $router->app->version();
 });
-$router->get('rompecabeza/{id}', 'RompecabezaController@show');
+$router->get('get-rompecabeza/{id}', 'RompecabezaController@show');
