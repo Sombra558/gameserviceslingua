@@ -8,8 +8,11 @@ class RompecabezaController extends Controller
 
     public function show($id)
     {
+       $data=collect();
        $recursos = app('db')->select("SELECT * FROM `recursos` WHERE `rompecabeza_id` = $id");
-        return json_encode($recursos);
+       $data=(["array"=>$recursos]);
+      
+        return json_encode($data);
     }
 
 }
