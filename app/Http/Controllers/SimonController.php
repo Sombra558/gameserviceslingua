@@ -10,7 +10,7 @@ class SimonController extends Controller
     {
        $data=collect();
        $recursos = app('db')->select("SELECT * FROM `simonrecursos` WHERE `simondice_id` = $id AND `idioma` = '$idioma' ");
-       $data=(["array"=>$recursos]);
+       $data=(["array"=>$recursos,"array2"=>$recursos]);
         return json_encode($data);
     }
 
