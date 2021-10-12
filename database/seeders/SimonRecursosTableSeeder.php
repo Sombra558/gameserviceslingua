@@ -21,5 +21,8 @@ class SimonRecursosTableSeeder extends Seeder
         DB::insert('insert into simonrecursos (Label, Image, idioma, Audio, simondice_id) values (?, ?, ?, ?, ?)', ['Pear','http://167.172.162.54/game/Simon/Img/Pera.png','en','http://167.172.162.54/game/Simon/Audios/en/Pera.mp3',1]);
         DB::insert('insert into simonrecursos (Label, Image, idioma, Audio, simondice_id) values (?, ?, ?, ?, ?)', ['Star','http://167.172.162.54/game/Simon/Img/Estrella.png','en','http://167.172.162.54/game/Simon/Audios/en/Estrella.mp3',1]);
         DB::insert('insert into simonrecursos (Label, Image, idioma, Audio, simondice_id) values (?, ?, ?, ?, ?)', ['Sun','http://167.172.162.54/game/Simon/Img/Sol.png','en','http://167.172.162.54/game/Simon/Audios/en/Sol.mp3',1]);
+        DB::insert('insert into simonrecursos (Label, Image, idioma, Audio, simondice_id) values (?, ?, ?, ?, ?)', ['Shirt','http://167.172.162.54/game/Simon/Img/Camisa.png','en','http://167.172.162.54/game/Simon/Audios/en/Camisa.mp3',1]);
+        DB::insert('insert into simonrecursos (Label, Image, idioma, Audio, simondice_id) values (?, ?, ?, ?, ?)', ['Ribbon','http://167.172.162.54/game/Simon/Img/Lazo.png','en','http://167.172.162.54/game/Simon/Audios/en/Lazo.mp3',1]);
+        
     }
 }

@@ -20,5 +20,7 @@ class MochilaRecursosTableSeeder extends Seeder
         DB::insert('insert into mochilarecursos (Label, Image, idioma, Audio, mochila_id) values (?, ?, ?, ?, ?)', ['Pear','http://167.172.162.54/game/Mochila/Img/Pera.png','en','http://167.172.162.54/game/Mochila/Audios/en/Pera.mp3',1]);
         DB::insert('insert into mochilarecursos (Label, Image, idioma, Audio, mochila_id) values (?, ?, ?, ?, ?)', ['Star','http://167.172.162.54/game/Mochila/Img/Estrella.png','en','http://167.172.162.54/game/Mochila/Audios/en/Estrella.mp3',1]);
         DB::insert('insert into mochilarecursos (Label, Image, idioma, Audio, mochila_id) values (?, ?, ?, ?, ?)', ['Sun','http://167.172.162.54/game/Mochila/Img/Sol.png','en','http://167.172.162.54/game/Mochila/Audios/en/Sol.mp3',1]);
+        DB::insert('insert into mochilarecursos (Label, Image, idioma, Audio, mochila_id) values (?, ?, ?, ?, ?)', ['Shirt','http://167.172.162.54/game/Mochila/Img/Camisa.png','en','http://167.172.162.54/game/Mochila/Audios/en/Camisa.mp3',1]);
+        DB::insert('insert into mochilarecursos (Label, Image, idioma, Audio, mochila_id) values (?, ?, ?, ?, ?)', ['Ribbon','http://167.172.162.54/game/Mochila/Img/Lazo.png','en','http://167.172.162.54/game/Mochila/Audios/en/Lazo.mp3',1]);
     }
 }
