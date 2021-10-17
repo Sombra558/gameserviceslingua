@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class SiluetaController extends Controller
@@ -12,6 +13,13 @@ class SiluetaController extends Controller
        $recursos = app('db')->select("SELECT * FROM `siluetasrecursos` WHERE `silueta_id` = $id AND `idioma` = '$idioma' ");
        $data=(["array"=>$recursos,"array2"=>$recursos]);
         return json_encode($data);
+    }
+
+
+    public function store(Request $request)
+    {
+       $data=$request->all();
+       return json_encode($data);
     }
 
 }
