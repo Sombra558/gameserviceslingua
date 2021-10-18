@@ -3,7 +3,8 @@
 
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    $recursos = app('db')->select("SELECT * FROM `siluetas`");
+    return $recursos;
 });
 $router->get('/perfil', 'ExampleController@example');
 $router->get('get-rompecabeza/{id}/{idioma}', 'RompecabezaController@show');
