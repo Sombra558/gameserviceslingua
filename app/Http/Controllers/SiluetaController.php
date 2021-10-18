@@ -18,8 +18,7 @@ class SiluetaController extends Controller
 
     public function store(Request $request)
     {
-       dd('conseguido');
-       
+        DB::insert('insert into siluetas (name) values (?)', ['avanzadi']);
     }
 
 }
