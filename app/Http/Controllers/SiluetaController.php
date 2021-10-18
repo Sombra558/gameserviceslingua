@@ -18,8 +18,8 @@ class SiluetaController extends Controller
 
     public function store(Request $request)
     {
-        dd($request->all());
-        return $request->all();
+       dd('conseguido');
+       
     }
 
 }
