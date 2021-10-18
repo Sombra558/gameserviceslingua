@@ -18,8 +18,8 @@ class SiluetaController extends Controller
 
     public function store(Request $request)
     {
-       $data=$request->all();
-       return json_encode($data);
+       $data="Retorno Completo";
+       return $data;
     }
 
 }
