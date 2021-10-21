@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Laravel\Lumen\Routing\Controller as BaseController;
+
+
+use App\Silueta;
 
 class SiluetaController extends Controller
 {
-
     public function show($id,$idioma)
     {
        $data=collect();
@@ -18,7 +21,9 @@ class SiluetaController extends Controller
 
     public function store(Request $request)
     {
-        DB::insert('insert into siluetas (name) values (?)', ['avanzadi']);
+       
+
+        return response('Successful insert');
     }
 
 }

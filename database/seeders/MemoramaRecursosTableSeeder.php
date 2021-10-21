@@ -20,5 +20,6 @@ class MemoramaRecursosTableSeeder extends Seeder
         DB::insert('insert into memoramarecursos (Label, Image, idioma, Audio, memorama_id) values (?, ?, ?, ?, ?)', ['Pear','http://167.172.162.54/game/Memorama/Img/Pera.png','en','http://167.172.162.54/game/Memorama/Audios/en/Pera.mp3',1]);
         DB::insert('insert into memoramarecursos (Label, Image, idioma, Audio, memorama_id) values (?, ?, ?, ?, ?)', ['Star','http://167.172.162.54/game/Memorama/Img/Estrella.png','en','http://167.172.162.54/game/Memorama/Audios/en/Estrella.mp3',1]);
         DB::insert('insert into memoramarecursos (Label, Image, idioma, Audio, memorama_id) values (?, ?, ?, ?, ?)', ['Sun','http://167.172.162.54/game/Memorama/Img/Sol.png','en','http://167.172.162.54/game/Memorama/Audios/en/Sol.mp3',1]);
+        DB::insert('insert into memoramarecursos (Label, Image, idioma, Audio, memorama_id) values (?, ?, ?, ?, ?)', ['Ribbon','http://167.172.162.54/game/Memorama/Img/Lazo.png','en','http://167.172.162.54/game/Memorama/Audios/en/Lazo.mp3',1]);
     }
 }
